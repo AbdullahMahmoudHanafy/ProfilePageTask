@@ -1,0 +1,34 @@
+body{
+    background-color: bwhiteeige;
+}
+
+#main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: darkgray;
+    width: 1020;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 250px 750px;
+    grid-template-rows: 250px 250px 200px;
+}
+
+#leftDiv{
+    margin: 20px 10px 20px 20px;
+    background-color: white;
+    grid-row: span 2;
+}
+
+#upperDiv{
+    margin: 20px 20px 10px 10px;
+    background-color: white;
+}
+
+#lowerDiv{
+    margin: 10px 20px 20px 10px;
+    background-color: white;
+    grid-row: span 2;
+}
