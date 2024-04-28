@@ -8,11 +8,11 @@ body{
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background-color: darkgray;
+    background-color: whitesmoke;
     width: 1020;
     height: 700px;
     display: grid;
-    grid-template-columns: 250px 750px;
+    grid-template-columns: 250px 850px;
     grid-template-rows: 250px 250px 200px;
 }
 
@@ -32,3 +32,73 @@ body{
     background-color: white;
     grid-row: span 2;
 }
+
+
+
+
+
+/* don't touhc this code its dor the lower div */
+.bar-button{
+    background-color: white;
+    width: 80px;
+    height: 40px;
+    border-bottom: 8px;
+    margin: 5px 5px 0px 5px;
+}
+
+.activ{
+    border-top: 8px;
+    border-right: 8px;
+    border-left: 8px;
+}
+
+hr{
+    margin: 0px 0px 0px 83.5px;
+    height: 1px;
+    border: none;
+    color: black;  /* old IE */
+    background-color: black; 
+}
+
+.activity-div{
+    width: 800px;
+    height: 40px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 650px 120px;
+    background-color: whitesmoke;
+    margin: 10px;
+}
+
+.activity-row{
+    display: grid;
+    grid-template-columns: 50px 550px;
+}
+
+.fa-solid{
+    margin: 5px 5px 5px 30px;
+}
+
+.boxed-btn{
+    color: white;
+    border-radius: 2px;
+    border: none;
+}
+#boxed-btn-1{
+    background-color: blue;
+}
+#boxed-btn-2{
+    background-color: green;
+}
+#boxed-btn-3{
+    background-color: orange;
+}
+#boxed-btn-4{
+    background-color: red;
+}
+
+.activity-details{
+    margin: 5px 5px 5px 30px;
+}
+
+/* the end of the lower div code */
