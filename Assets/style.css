@@ -102,3 +102,84 @@ hr{
 }
 
 /* the end of the lower div code */
+
+/* start of upper div styling */
+.upperDiv-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 0px;
+    height: 55px;
+    align-items: center;
+}
+
+.upperDiv-header-text{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px grey solid;
+    padding: 0px 0px 5px 0px;
+}
+
+.upperDiv-header-button{
+    background-color: #45cab3;
+    border: #45cab3;
+    width: 100px;
+    height:30px;
+    border-radius: 2px;
+    box-shadow: 0px 3.5px #46948c;
+    border-radius: 5px;
+    transition: grey 0.5s ease;
+}
+
+.upperDiv-header-button>span{
+    font-size: 0.8rem;
+    color: white;
+}
+.upperDiv-header-button>i{
+    margin: 0px 5px 0px 0px;
+}
+
+.upperDiv-info{
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.upperDiv-info-content{
+    width: 290px;
+    height:160px;
+    display: grid;
+    grid-template-columns: 100px 180px;
+    grid-row: repeat(1fr,5);
+    grid-column-gap:10px;
+    font-size: 0.8rem;
+}
+
+
+.upperDiv-info-content-left-col{
+    text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.upperDiv-info-contacts{
+    width: 200px;
+    height:160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.upperDiv-info-contacts>div{
+    height: 25px;
+}
+
+.upperDiv-info-contacts span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 0px 0px 0px 5px;
+}
+/* end of upper div styling */
+
+
+
+
+
