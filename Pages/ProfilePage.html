@@ -4,13 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/011f0557e4.js" crossorigin="anonymous"></script>
     <title>Profile Page</title>
 </head>
 <body>
     <div id = "main">
-        <div id = "leftDiv"> leftDiv</div>
-        <div id = "upperDiv"> upperDiv</div>
+        <div id = "leftDiv"> 
+            <p class="name"> John Doe </p>
+            <img class="online" src="../icons/online.png">
+            <p class="activity"> Online</p>
+            <img class="profile-picture" src="../icons/taskk.jpg">
+            <p class="title"> Admin</p>
+            <img class="stars" src="../icons/raitingStar.PNG">
+            <p class="raiting"  > Super User</p>
+            <p class="membership"> Member since: Jan 2012</p>
+            <div class="details" >
+                <img class="truck" src="../icons/truck.jpg">
+                <p class=order> Orders: <span class= "numbers">456</span></p>
+                <img class="messages" src="../icons/message.png">
+                <p class=posts> Posts: <span class= "numbers">828</span></p>
+                <img class="tasks" src="../icons/tasks.png">
+                <p class=tasksdone> Tasks done: <span class= "numbers">1024</span></p>
+            </div>
+            <button class="button-edit"> <img class=" evelope" src="../icons/envelopee.PNG"> Send message</button>
+        </div>
+        
+        <div id = "upperDiv"> 
+            <div class="upperDiv-header">
+                <div class="upperDiv-header-text"> User info</div>
+                <button class="upperDiv-header-button"><i class="fa-solid fa-pen-to-square fa-lg" style="color: #ffffff;"></i><span>Edit profile</span></button>
+            </div>
+
+            <div class="upperDiv-info">
+                <div class="upperDiv-info-content">
+                    <div class="upperDiv-info-content-left-col">First name</div>
+                    <div>John</div>
+                    <div class="upperDiv-info-content-left-col">Last name</div>
+                    <div>Doe</div>
+                    <div class="upperDiv-info-content-left-col">Address</div>
+                    <div>10880 Malibu Point, Malibu, calif., 90265</div>
+                    <div class="upperDiv-info-content-left-col">Email</div>
+                    <div>johndoe@bootdey.com</div>
+                    <div class="upperDiv-info-content-left-col">Phone number</div>
+                    <div>011223344556677</div>
+                </div>
+                <div class="upperDiv-info-contacts">
+                    <div><i class="fa-brands fa-square-twitter fa-bounce fa-sm"></i><span>@scjohndeo</span></div>
+                    <div><i class="fa-brands fa-linkedin fa-bounce fa-sm"></i><span>John Doe</span></div>
+                    <div><i class="fa-brands fa-square-facebook fa-bounce fa-sm"></i><span>John Doe</span></div>
+                    <div><i class="fa-brands fa-skype fa-bounce fa-sm"></i><span>Black Widow</span></div>
+                    <div><i class="fa-brands fa-square-instagram fa-bounce fa-sm"></i><span>Avenger_Scarlet</span></div>
+                </div>
+            </div>
+        </div>
+        
         <div id = "lowerDiv">
             <div class="buttons-div">
                 <button class = "bar-button">Activity</button>
