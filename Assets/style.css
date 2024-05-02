@@ -103,7 +103,7 @@ body{
     
 }
 
-.raiting{
+.rating{
     display: inline-flex;
     align-items: center;
     font-family: roboto,arial;
@@ -132,13 +132,6 @@ body{
     padding-bottom: 10px;
 }
 
-.truck{
-    width: 20px;
-    display: inline;
-    margin-top: 2px;
-    margin-left: 3px;
-    
-}
 .order{
     font-family: roboto,arial;
     font-size: 13px;
@@ -148,29 +141,23 @@ body{
    
 }
 
-
-.messages{
-    width: 15px;
-    display: inline;
-    margin-left: 5px;
-    
+.left-div-icons{
+    margin: 0px 10px 0px 10px;
 }
+.fa-comment{
+    margin: 0px 15px 0px 10px;
+}
+
 .posts{
+    width: 100%;
     font-family: roboto,arial;
     display: inline;
     font-size: 13px;
     margin-right: 75px;
-    padding-left: 2px;
-    margin-left: 7px;
+    /* padding-left: 2px;
+    margin-left: 7px; */
 }
 
-
-.tasks {
-    width: 20px;
-    display: inline;
-    margin-left: 4px;
-    
-}
 .tasksdone{
     font-size: 13px;
     font-family: roboto,arial;
@@ -183,11 +170,6 @@ body{
     font-family: roboto,arial;
     font-size: 13px;
     color:rgb(2, 189, 189);
-}
-
-.evelope{
-    width: 20px;
-    
 }
 
 .button-edit{
@@ -246,7 +228,7 @@ hr{
     grid-template-columns: 50px 550px;
 }
 
-.fa-solid{
+.lower-div-icons{
     margin: 5px 5px 5px 30px;
 }
 
