@@ -17,9 +17,15 @@ body{
 }
 
 #leftDiv{
+    height: 570px;
     margin: 20px 10px 20px 20px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-style: solid;
     background-color: white;
+    border-style: none;
     grid-row: span 2;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.15);
 }
 
 #upperDiv{
@@ -34,8 +40,173 @@ body{
 }
 
 
+/* left div */
+.name{
+    display: block;
+    margin-left: 5px;
+    font-size: 23px;
+    color: black;
+    font-family: roboto,arial;
+    margin-bottom: 0px;
+}
+
+.online{
+    display: inline;
+    position: relative;
+    width: 12px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.activity{
+    display: inline;
+    position: absolute;
+    padding-left: 0px;
+    font-size: 10px;
+    color: rgb(71, 189, 71);
+    font-family: roboto,arial;
+}
+
+.profile-picture{
+    border-style: solid;
+    border-color: rgba(134, 134, 134, 0.733);
+    border-width: 1px;
+    margin-top: 15px;
+    margin-left: 4px;
+    width: 170px;
+    height: 200px;
+    
+}
+
+.title{
+    display: block;
+    font-family: roboto,arial;
+    font-size: smaller;
+    color: white;
+    background-color: rgb(192, 67, 67);
+    border-radius: 2px;
+    width: 40px;
+    margin-left: 60px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.stars{
+    display: inline-flex;
+    width: 70px;
+    background-color:white ;
+    margin-left: 17px;
+    margin-bottom: 0px;
+    
+}
+
+.raiting{
+    display: inline-flex;
+    align-items: center;
+    font-family: roboto,arial;
+    font-size: 13px;
+    color: rgb(225, 201, 14);
+    margin-bottom: 0px;
+}
+
+.membership{
+    margin-left: 17px;
+    font-family: roboto,arial;
+    font-size: 13px;
+    margin-top: 6px;
+}
 
 
+
+.details{
+    border-style: solid;
+    border-left: 0px;
+    border-right:0px;
+    border-width:0.1px;
+    border-color:rgba(169, 168, 168, 0.733); 
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.truck{
+    width: 20px;
+    display: inline;
+    margin-top: 2px;
+    margin-left: 3px;
+    
+}
+.order{
+    font-family: roboto,arial;
+    font-size: 13px;
+    display: inline;
+    margin-right: 75px;
+    margin-top: 0px;
+   
+}
+
+
+.messages{
+    width: 15px;
+    display: inline;
+    margin-left: 5px;
+    
+}
+.posts{
+    font-family: roboto,arial;
+    display: inline;
+    font-size: 13px;
+    margin-right: 75px;
+    padding-left: 2px;
+    margin-left: 7px;
+}
+
+
+.tasks {
+    width: 20px;
+    display: inline;
+    margin-left: 4px;
+    
+}
+.tasksdone{
+    font-size: 13px;
+    font-family: roboto,arial;
+    display: inline;
+    margin-left: 3px;
+}
+
+
+.numbers{
+    font-family: roboto,arial;
+    font-size: 13px;
+    color:rgb(2, 189, 189);
+}
+
+.evelope{
+    width: 20px;
+    
+}
+
+.button-edit{
+    font-family: roboto,arial;
+    font-size: 13px;
+    background-color: rgb(15,157,88);
+    color: white;
+    margin-top: 20px;
+    margin-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:10px ;
+    padding-right: 10px;
+    border-style: none;
+    border-radius: 4px;
+    box-shadow: 0 3px 1px rgb(11, 115, 65);
+}
+
+/* left div end */
 
 /* don't touch this code its dor the lower div */
 .bar-button{
