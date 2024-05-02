@@ -1,10 +1,14 @@
-body {
+body, html {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    max-width: 400px;
+    width: 400px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
