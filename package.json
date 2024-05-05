@@ -1,0 +1,16 @@
+{
+  "name": "profilepagetask",
+  "version": "1.0.0",
+  "description": "profilePageTask",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Team3",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.11.5"
+  }
+}
