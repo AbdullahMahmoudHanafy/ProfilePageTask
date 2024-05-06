@@ -68,5 +68,12 @@ input[type="submit"]:hover {
 }
 
 
-
+.errorDiv{
+    padding: 0;
+    color: rgb(182, 38, 38);
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
