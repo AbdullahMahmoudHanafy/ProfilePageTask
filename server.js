@@ -14,11 +14,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "Public")));
 
 app.get("/", (req, res) => {
-    res.render("./loginPage.ejs")
+    res.render("./loginPage.ejs",{ errorMessage:null })
 })
 
 app.get("/loginPage", (req, res) => {
-    res.render("./loginPage.ejs")
+    res.render("./loginPage.ejs",{ errorMessage: null })
 })
 
 app.get("/registerPage", (req, res) => {
@@ -33,17 +33,22 @@ app.post("/loginUser", async (req, respond) => {
     await pool.connect()
 
     await pool.query(`select * from users where email = '${enteredEmail}'`, (err, res) => {
-
+        // console.log(res.rows);
+      
         if (!err) {
-            if (enteredPassword == res.rows[0].password) {
+            if(res.rows.length==0){
+                respond.render("./loginPage.ejs", { errorMessage: "Wrong Email, please try again." });            
+            }
+            
+            else if (enteredPassword == res.rows[0].password) {
                 let firstName = res.rows[0].firstname, lastName = res.rows[0].lastname
                 let fullName = firstName + " " + lastName
                 respond.render("./ProfilePage.ejs", { fullName: fullName, firstName: firstName, lastName: lastName, email: enteredEmail })
             } else {
-                respond.render("./loginPage.ejs")
+                respond.render("./loginPage.ejs", { errorMessage: "Wrong password, please try again." });
             }
         }
-        else respond.render("./loginPage.ejs")
+        else respond.render("./loginPage.ejs",{ errorMessage: null })
     })
     // res.render("./ProfilePage.ejs", {fullName: fullName, firstName: firstName, lastName: lastName, email: email});
 })
