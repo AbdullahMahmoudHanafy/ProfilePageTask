@@ -11,7 +11,10 @@
 <body>
     <div class="login-container">
         <h1>Login</h1>
-        <form action = "loginUser" method = "POST">
+        <div class="errorDiv">
+            <%= errorMessage %>
+        </div>
+        <form action="loginUser" method="POST">
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" placeholder="Enter Email" required><br>
             <label for="password">Password:</label>
@@ -24,14 +27,8 @@
         </div>
     </div>
 
-    <script>
-        var messageBox = document.getElementById("messageBox");
-        function displayMessage(message) {
-            messageBox.textContent = message;
-            messageBox.style.display = "block";
-        }
-        displayMessage("{{Message}}");
-    </script>
+ 
+    
 </body>
 
 </html>
