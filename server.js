@@ -91,7 +91,6 @@ app.post("/loginUser", async (req, respond) => {
         }
         else respond.render("./loginPage.ejs",{ errorMessage: null })
     })
-    // res.render("./ProfilePage.ejs", {fullName: fullName, firstName: firstName, lastName: lastName, email: email});
 })
 
 app.post("/registerUser",upload.single("image"), async (req, respond) => {
