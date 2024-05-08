@@ -54,6 +54,10 @@ input[type="submit"] {
     
 }
 
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
 input[type="submit"]:hover {
     background-color: #45a049;
 }
